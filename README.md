@@ -1,6 +1,6 @@
 # fdrop
 
-fdrop is a lightweight, command-line steganography tool written in modern C++ using the xmake build system. It allows you to conceal secret text messages inside the pixel data of uncompressed BMP images without visibly altering them, and decode them back later.
+fdrop is a lightweight, command-line steganography tool written in modern C++ using the xmake build system. It allows you to conceal secret text messages inside the pixel data of uncompressed BMP (others may also be suitable) images without visibly altering them, and decode them back later.
 
 > "A dead drop (or fdrop) is a method of espionage used to pass items or information between two individuals using a secret location."
 
@@ -13,7 +13,7 @@ fdrop is a lightweight, command-line steganography tool written in modern C++ us
 
 ## Installation & Build
 
-This project is optimized for Linux (especially Arch Linux) and requires xmake and a modern C++ compiler (like `g++` or `clang`).
+This project is optimized for Linux and requires xmake and a modern C++ compiler (like `g++` or `clang`).
 
 ### 1. Install dependencies (Arch Linux)
 
@@ -63,5 +63,4 @@ g++ src/*.cpp -Isrc -o fdrop
 ## Project Structure
 
 - `src/` — C++ source files (`main.cpp`, encoders, decoders, and file I/O helpers).  
-- `xmake.lua` — Xmake build configuration.  
-- `arch-linux.bmp` — Default test image.
+- `xmake.lua` — Xmake build configuration.
